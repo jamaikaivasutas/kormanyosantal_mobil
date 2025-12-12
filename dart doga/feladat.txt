@@ -1,0 +1,73 @@
+1. Sum Arrays - Tömb összegzés
+Írj egy olyan függvényt, amely egy számokból álló tömböt vesz fel, és a számok összegét adja vissza.
+A számok lehetnek negatívak vagy nem egész számok.
+Ha a tömb nem tartalmaz számokat, akkor 0-t kell visszaadnia.
+
+num sum(List<num> arr) {
+return -1;
+}
+
+Példa:
+sum([]) -> 0
+sum([5]) -> 5
+sum([-5]) -> -5
+sum([1, 2, 3.4, 4.3]) ->10.7
+sum([1, -3, 2, 3, 4, -1]) -> 6
+
+
+2. Odd Ones Out - Páratlanszor előfordulók kihagyása
+Kapsz egy számokból álló listát. A számok mindegyike bizonyos számszor ismétlődik. Távolítsd el az összes olyan számot, amely páratlan számszor fordul elő, miközben minden más számot változatlanul hagysz.
+
+List<int> oddOnesOut(List<int> nums) {
+return [];
+}
+Példa:
+oddOnesOut([1, 2, 3, 1, 3, 3]) -> [1, 1]
+oddOnesOut([75, 68, 75, 47, 68])
+-> [75, 68, 75, 68]
+oddOnesOut([42, 72, 32, 4, 94, 82, 67, 67]) -> [67, 67]
+oddOnesOut([100, 100, 5, 5, 100, 50, 68, 50, 68, 50, 68, 5, 100]) -> [100, 100, 100, 100]
+oddOnesOut([82, 86, 71, 58, 44, 79, 50, 44, 79, 67, 82, 82, 55, 50])
+-> [44, 79, 50, 44, 79, 50]
+
+
+3. Flatten and sort an array - Lapít és sorbarendez
+Egész számok kétdimenziós tömbje esetén adja vissza a tömb lapított változatát (egydimenziós tömb), amely az összes egész számot rendezett (növekvő) sorrendben tartalmazza.
+
+List<int> flattenAndSort(List<List<int>> nums) {
+return [];
+}
+
+Példa:
+flattenAndSort([]) -> []
+flattenAndSort([[]]) -> []
+flattenAndSort([[], []]) -> []
+flattenAndSort([[], [1]]) -> [1]
+flattenAndSort([[], [], [], [2], [], [1]]) -> [1, 2]
+flattenAndSort([[1, 3, 5], [100], [2, 4, 6]]) -> [1, 2, 3, 4, 5, 6, 100]
+flattenAndSort([[111, 999], [222], [333], [444], [888], [777], [666], [555]]) -> [111, 222, 333, 444, 555, 666, 777, 888, 999]
+flattenAndSort([[9, 7, 5, 3, 1], [8, 6, 4, 2, 0], [], [1]]) -> [0, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+flattenAndSort([[1], [], [1], [], [], [-1, -2, -1], [0, 3], [1], [2]]) -> [-2, -1, -1, 0, 1, 1, 1, 2, 3]
+flattenAndSort([[], [], [64], [], [504, 503], [4096], [], [303], [202], [2500], [], [100]]) -> ([64, 100, 202, 303, 503, 504, 2500, 4096]
+flattenAndSort([[90, 81, 72], [63, 54, 35], [], [46], [27, 18, 0]]) -> ([0, 18, 27, 35, 46, 54, 63, 72, 81, 90]
+flattenAndSort([[1], [], [1], [1], [0], [-1], [], [0], [-1], [0], [-1]]) -> [-1, -1, -1, 0, 0, 0, 1, 1, 1]
+flattenAndSort([[-9, -8, -7, -6, -5, -4, -3, -2, -1]]) -> [-9, -8, -7, -6, -5, -4, -3, -2, -1]
+flattenAndSort([[9, 8, 7, 6, 5, 4, 3, 2, 1]]) -> ([1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+4. Counting Duplicates - Többször előfordulók száma
+Írjon egy függvényt, amely visszaadja a bemeneti karakterláncban többször előforduló karakterek számát.
+A nagy- és kisbetűk nem különböző karakterek!
+Feltételezhető, hogy a bemeneti karakterlánc csak betűket (kis- és nagybetűket egyaránt) és számjegyeket tartalmaz.
+
+int duplicateCount(String text){
+// your code goes below
+return -1;
+}
+
+Példa:
+duplicateCount("") -> 0
+duplicateCount("abcde") -> 0
+duplicateCount("aabbcde") -> 2
+duplicateCount("aabBcde") -> 2
+duplicateCount("Indivisibility") -> 1
